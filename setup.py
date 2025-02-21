@@ -10,7 +10,7 @@ with open("requirements.txt") as f:
 
 setup(
     name='pyseeder',
-    version='0.1',
+    version='0.2',
     description='Python reseed utilities for I2P',
     long_description=long_description,
     author='Darnet Villain',
@@ -22,7 +22,7 @@ setup(
     license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',
-        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
         'Topic :: Utilities',
     ],
@@ -32,5 +32,9 @@ setup(
         'console_scripts': [
             'pyseeder=pyseeder.cli:main',
         ],
-    }
+    },
+    project_urls={
+        'Bug Reports': 'https://github.com/PurpleI2P/pyseeder/issues',
+        'Source': 'https://github.com/PurpleI2P/pyseeder/',
+    },
 )
